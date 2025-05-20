@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Bicublik';
+    src: url(fonts/Bicubik-71qR.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cygre';
+    src: url(fonts/Cygre-Light.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family:Cygre ;
+    color: #F5E0E0;
+    background-color: #1A0938;
+    background-image: url(images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+   
+}
+.containerforstars{
+    position: relative;
+ 
+}
+.stars1{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 13.6rem;
+    top: 5.7rem;
+    
+}
+.stars2{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 59rem;
+    top: 13rem;
+    z-index: 5;
+}
+.stars3{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 7rem;
+    top: 17.7rem;
+    z-index: 2;
+}
+.stars4{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 16rem;
+    top: 52rem;
+    z-index: 2;
+}
+
+.stars6{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 13.7rem;
+    top: 52rem;
+    z-index: 2;
+}
+
+.maingrid{
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns:1fr;
+    padding-left:3rem; 
+    grid-template-areas: 
+    "header"
+    "q1"
+    "q2"
+    "cta"
+    /* "cta2"; */
+    
+}
+.header{
+    /* align-items: flex-start; */
+    grid-area: header;
+    /* max-width: 62.2rem; */
+    display: flex;
+    position: relative;
+    padding-top: 12.8rem;
+  
+   
+
+}
+h1{
+    max-width: 43rem;
+    font-family: Bicublik;
+    font-weight: 100;
+    z-index: 2;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-left: 5em;
+    letter-spacing: 0.2rem;
+    margin-top: -0.2em;
+    
+
+ 
+   
+}
+.upellipse{
+    position: absolute;
+    mix-blend-mode: overlay;
+    z-index: 1;
+}
+
+.q1{
+    grid-area: q1;
+    padding-left: 50rem;
+    padding-top: 6rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: 400;    
+}
+.q2{
+    grid-area: q2;
+    padding-top: 6rem;
+    padding-left: 14.7rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+      font-weight: 400;  
+}
+.ellipse2{
+    mix-blend-mode: exclusion;
+    position: absolute;
+    right: 23rem;
+    top: 5rem;
+
+
+    
+}
+.cta{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    margin-bottom: 6rem;
+    
+
+}
+.cta1{
+    grid-area: cta;
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
+    text-align: center;
+   
+}
+    
+.cta2{
+    grid-area: cta;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+@media(768px){
+  html{
+    max-width: 768px;
+  }
+   
+    .cta1{
+        font-size: 2rem;
+    }
+    .cta2{
+        font-size: 1.5rem;
+    }
+}
