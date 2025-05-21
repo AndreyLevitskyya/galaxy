@@ -55,8 +55,6 @@ body{
 
 }
 
-
-
 h1{
     max-width: 50vw;
     font-family: Bicublik;
@@ -64,7 +62,6 @@ h1{
     z-index: 2;
     font-size: clamp(2.2rem,calc(48/1440*100vw), 4rem);  /* 1-минимальный,
     2-основной(зависит от экрана), 3-максимальный  */
-    
 }
 .box{
     box-sizing: border-box;
@@ -76,7 +73,6 @@ h1{
     font-size: clamp(1rem,calc(32/1440*100vw),2rem);
     /* font-size: clamp(1rem,calc(16/1440*100vw),1rem); */
     margin-bottom:14.4vw;
-    
 }
 .q2{
     align-self: center; /* выравнивает элемент независимо от других */
@@ -180,10 +176,7 @@ margin-top:2vw;
     transform: translateX(-60%);
 
 }
-h1{
-   font-size: ;
-    
-}
+
 .header{
     text-align: start;
     padding-left: 1vw;
@@ -233,6 +226,7 @@ h1{
     top: 2vw;
     left: 8vw;
     z-index: 3;
+}
 }
 
 
