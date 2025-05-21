@@ -168,6 +168,9 @@ margin-top:2vw;
 }
 
 .cta{
+    
+    transform: translateY(18vw); 
+    mix-blend-mode: exclusion;
         gap: 0.5rem;
 }
 .ellipse2{
@@ -176,11 +179,15 @@ margin-top:2vw;
     transform: translateX(-60%);
 
 }
+h1{
+     font-size: clamp(1.8rem,calc(48/1440*100vw), 4rem); 
 
+}
 .header{
     text-align: start;
     padding-left: 1vw;
     padding-right: 1vw;
+
 }
 .box{
     box-sizing: border-box;
@@ -191,6 +198,7 @@ margin-top:2vw;
 .content{
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 5vw;
 }
 .stars4{
     position: absolute;
@@ -216,8 +224,8 @@ margin-top:2vw;
 .stars3{
     position: absolute;
     width: 8vw;
-   top: 20rem;
-    right: 10vw;
+   top: 14rem;
+    left: 15vw;
     z-index: 3;
 }
 .stars1{
