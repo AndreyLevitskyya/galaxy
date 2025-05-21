@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Bicublik';
+    src: url(fonts/Bicubik-71qR.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cygre';
+    src: url(fonts/Cygre-Light.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     
+    font-family:Cygre ;
+    color: #F5E0E0;
+    background-color: #1A0938;
+    background-image: url(images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* max-width: 100vw; */
+    overflow-x: hidden;
+    min-height: 100vh;
+    letter-spacing: 0.2rem;  
+    /* слишком жесткие отступы в медиа для мобилках поменять */
+}
