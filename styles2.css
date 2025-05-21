@@ -28,3 +28,141 @@ body{
     letter-spacing: 0.2rem;  
     /* слишком жесткие отступы в медиа для мобилках поменять */
 }
+.containerforstars{
+    position: relative;
+}
+.stars1{
+    position: absolute;
+    width: 8vw;
+    top: 3vw;
+    left: 15.1vw;
+}
+.stars2{
+    position: absolute;
+    width: 8vw;
+    top: 12vw;
+    left: 70vw;
+    z-index: 3;
+}
+.stars3{
+    position: absolute;
+    width: 8vw;
+    top: 45vw;
+    left: 78vw;
+    z-index: 3;
+}
+.stars4{
+    position: absolute;
+    width: 8vw;
+    top: 58vw;
+    left: 18.2vw;
+    z-index: 3;
+}
+.stars5{
+   position: absolute;
+    width: 8vw;
+    top: 25vw;
+    left: 25vw;
+    z-index: 3;
+}
+.content{
+    padding-left: 3%;
+}
+.container{
+    letter-spacing: 0.2rem;
+    /* gap: 1vw; */
+        padding-bottom: 23vw;
+}
+.header{
+    padding-top: 7vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: -5vw;
+}
+.bigellipse{
+    mix-blend-mode: overlay;
+    max-width: 69vw;
+}
+h1{
+    padding-top: 5vw ;
+ font-size: clamp(2.2rem,calc(48/1440*100vw), 4rem); 
+    position: absolute;
+    font-family:Bicublik;
+    font-weight: 400;
+   padding-left: 14vw;
+}
+
+.planets{
+    /* padding-top: 1vw; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10vw;
+}
+.planettext{
+    text-align: center;
+    font-size: clamp(0.5rem,calc(24/1440*100vw),1.5rem);
+}
+
+.rad{
+    width: 30vw;
+    height:30vw;
+
+}
+.pech{
+    width: 30vw;
+    height:30vw;
+
+}
+.gnev{
+    width: 30vw;
+    height:30vw;
+}
+.planet{
+     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    transition: transform 0.8s ease;
+    position: relative;
+}
+.planet:hover{
+    transform:scale(0.3) translate(-50%, -50%);
+    cursor: pointer;
+}
+.description{
+    position: absolute;
+    /* left: 10vw; */
+    top: 28vw;
+    width: 80vw;
+    
+    /* text-shadow: 0 0.5vw 2vw rgba(255, 255, 255, 0.591); */
+    text-align: center;
+    font-size:clamp(3.5rem,3.8vw,3.5rem);
+    /* transform: translateY(-10px); */
+    opacity: 0;
+    /* transition:all 0.4s ease; */
+
+    /* transform: translateX(-30px); */
+    /* max-width: 28.9vw;
+    text-align: justify; */
+    /* margin-left: 1vw; */
+    /* min-height: 21vw; */
+  
+}
+.planet:hover .description{
+      opacity: 1;
+      transform: translateX(0);
+      /* padding-top: 20vw; */
+      
+}
+.planet:hover .planettext{
+      opacity: 0;
+
+      
+}
+
+
+
